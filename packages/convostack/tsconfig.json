@@ -1,0 +1,38 @@
+{
+  "extends": "config-tsconfig/tsconfig.backend.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noEmit": false,
+    "module": "ESNext"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "docs"
+  ],
+  "typedocOptions": {
+    "entryPoints": [
+      "src/agent/index.ts",
+      "src/agent-echo/index.ts",
+      "src/agent-sse/index.ts",
+      "src/agent-sse-echo-server/index.ts",
+      "src/auth/index.ts",
+      "src/auth-jwt/index.ts",
+      "src/backend-express/index.ts",
+      "src/langchain-memory/index.ts",
+      "src/langchain-agent/index.ts",
+      "src/playground/index.ts",
+      "src/agent-http/index.ts",
+      "src/frontend-react/index.ts",
+      "src/models/index.ts",
+      "src/shared/index.ts",
+      "src/storage-engine-prisma-sqlite/index.ts",
+      "src/storage-engine-prisma-postgres/index.ts",
+      "src/storage-engine-prisma-mysql/index.ts"
+    ]
+  }
+}

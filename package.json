@@ -1,0 +1,24 @@
+{
+  "name": "convostack",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "tsup": "^6.7.0",
+    "turbo": "^1.9.3"
+  },
+  "workspaces": [
+    "examples/*",
+    "packages/*",
+    "docs"
+  ],
+  "dependencies": {
+    "validator": "^13.9.0"
+  }
+}

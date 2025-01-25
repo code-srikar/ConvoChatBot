@@ -1,0 +1,17 @@
+query GetConversations {
+  getConversations {
+    id
+    title
+    lastMessage {
+      id
+      content
+      userId
+      createdAt
+    }
+    agent {
+      key
+      displayName
+      avatarUrl
+    }
+  }
+}
